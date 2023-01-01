@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Jost;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --gray-color: #999;
+    --gray-light: #e5e5e5ff;
+    --black-color: #000;
+    --white-color: #fff;
+    --black-color50: #00000080;
+    --black-color60: #00000099;
+    --black-color80: #000000cc;
+    --green-light: #a8f5ee;
+    --green-color:  #62d6cb;
+}
+
+body {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0.02;
+    line-height: 1.55;
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+    align-items: center;
+    padding-top: 70px;
+    flex-direction: column;
+}
+
+.max-width-container {
+    width: 100%;
+    display: flex;
+    max-width: 1328px;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    flex-direction: column;
+}
+
+.home-header {
+    padding-top: 26px;
+    flex-direction: row;
+    padding-bottom: 24px;
+    justify-content: space-between;
+}
+
+.container01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0, 1);
+    cursor: pointer;
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    transition: 0.3s;
+    font-family: Jost;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar-logo-title {
+    color: var(--black-color);
+    cursor: pointer;
+    height: auto;
+    font-size: 24px;
+    transition: 0.3s;
+    font-family: Jost;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 64px;
+    margin-right: 64px;
+    letter-spacing: 0.4rem;
+    text-decoration: none;
+}
