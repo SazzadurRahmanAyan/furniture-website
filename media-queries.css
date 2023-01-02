@@ -1,0 +1,12 @@
+@media(max-width:991px) {
+    .navbar-logo-title {
+        margin-left: 0;
+    }
+}
+
+@media(max-width:767px) {
+    .max-width-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

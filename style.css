@@ -105,3 +105,111 @@ a {
     letter-spacing: 0.4rem;
     text-decoration: none;
 }
+
+.navbar {
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--green-light);
+}
+
+.navbar1 {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-image {
+    width: 24px;
+    height: 24px;
+    z-index: 100;
+    margin-right: -32px;
+}
+
+.input {
+    color: var(--white-color);
+    cursor: alias;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--green-light);
+}
+
+.textinput {
+    width: 100%;
+    max-width: 288px;
+    transition: 0.3s;
+    border-color: var(--gray-color);
+    border-width: 1.5px;
+    padding-left: 48px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    color: var(--black-color);
+    font-family: Jost;
+}
+
+.textinput:hover {
+    border-color: var(--green-color);
+}
+
+.middel {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    flex-shrink: 1;
+    border-color: transparent;
+    justify-content: center;
+}
+
+.left {
+    display: inline;
+    position: relative;
+    align-items: flex-start;
+}
+
+.right {
+    display: inline;
+    position: relative;
+    align-items: flex-start;
+}
+
+.home-icons {
+    display: flex;
+}
+
+.shopping-image {
+    width: 24px;
+    height: 24px;
+    margin: 0 24px 0 0;
+    position: relative;
+    box-sizing: border-box;
+    object-fit: cover;
+    border-color: transparent;
+}
+
+.heart-image {
+    width: 24px;
+    height: 24px;
+    margin: 0 24px 0 0;
+    position: relative;
+    box-sizing: border-box;
+    object-fit: cover;
+    border-color: transparent;
+}
+
+.user-image {
+    width: 24px;
+    height: 24px;
+    margin: 0 24px 0 0;
+    position: relative;
+    box-sizing: border-box;
+    object-fit: cover;
+    border-color: transparent;
+}
