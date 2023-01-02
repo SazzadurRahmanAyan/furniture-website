@@ -169,15 +169,17 @@ a {
 }
 
 .left {
-    display: inline;
+    display: inline-flex;
     position: relative;
     align-items: flex-start;
+    gap: 45px;
 }
 
 .right {
-    display: inline;
+    display: inline-flex;
     position: relative;
     align-items: flex-start;
+    gap: 45px;
 }
 
 .home-icons {
@@ -212,4 +214,237 @@ a {
     box-sizing: border-box;
     object-fit: cover;
     border-color: transparent;
+}
+
+/* hamburger (responsive header) */
+
+#toggle {
+    display: none;
+}
+
+.hamburger {
+    position: absolute;
+    top: 4.2rem;
+    right: 5%;
+    margin-left: -2rem;
+    margin-top: -45px;
+    width: 1.5rem;
+    height: 2.5px;
+    z-index: 5;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div {
+    position: relative;
+    width: 1.5rem;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--black-color);
+    margin-top: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav {
+    position: fixed;
+    width: 60%;
+    height: 80%;
+    background-color: var(--white-color);
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+    display: none;
+    z-index: 1;
+}
+
+nav {
+    margin-left: 47%;
+    margin-top: 10%;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 1.25rem;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+}
+
+nav a::before {
+    content: "";
+    height: 0;
+    width: 0.25rem;
+    background-color: var(--white-color);
+    left: -0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--gray-color);
+}
+
+nav a:hover::before {
+    height: 100%;
+}
+
+/* navbar animation */
+#toggle:checked+.hamburger .top-bar {
+    transform: rotate(-45deg);
+    margin-top: 15px;
+}
+
+#toggle:checked+.hamburger .bottom-bar {
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+#toggle:checked+.hamburger .middle-bar {
+    transform: rotate(45deg);
+    margin-top: -3px;
+}
+
+#toggle:checked+.hamburger+.nav {
+    transform: scale(1);
+}
+/* end header */
+
+/* home main front page */
+
+.section-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+    justify-content: center;
+}
+
+.home-main {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 96px;
+}
+
+.home-hero {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: var(--green-light);
+}
+
+.home-max-width {
+    max-width: 1032px;
+}
+
+.home-hero1 {
+    width: 100%;
+    display: flex;
+    max-width: 1328px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container03 {
+    display: flex;
+    margin-right: 48px;
+    padding-right: 48px;
+    flex-direction: column;
+}
+
+.home-text1 {
+    max-width: 450px;
+    margin-bottom: 48px;
+}
+
+.heading-1 {
+    font-size: 50px;
+    font-family: Jost;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.container04 {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    flex-direction: row;
+}
+
+.home-text2 {
+    color: var(--black-color80);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-right: 4px;
+    letter-spacing: 0.1rem;
+}
+
+.home-text3 {
+    color: var(--black-color80);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.home-btn-group {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+button {
+    background-color: transparent;
+}
+
+.button {
+    color: var(--black-color80);
+    cursor: pointer;
+    display: flex;
+    padding: 0.5rem 1rem;
+    position: relative;
+    box-sizing: border-box;
+    font-style: normal;
+    transition: 0.3s;
+    align-items: flex-start;
+    flex-shrink: 1;
+    font-weight: 500;
+    line-height: 14px;
+    padding-top: 12px;
+    border-color: var(--black-color50);
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 24px;
+    border-radius: 0;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: var(--black-color);
+    border-color: var(--green-color);
+    background-color: var(--green-color);
+}
+
+.home-image {
+    width: 100%;
+    position: relative;
+    max-width: 579px;
+    box-sizing: border-box;
+    max-height: 579px;
+    object-fit: cover;
+    border-color: transparent;
+    animation: ani 3s linear infinite;
 }
