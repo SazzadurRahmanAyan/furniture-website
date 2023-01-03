@@ -103,3 +103,20 @@
         flex-direction: column;
     }
 }
+
+@media(max-width:767px) {
+    .category-card {
+        width: 48%;
+    }
+
+    .category-image {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media(max-width:479px) {
+    .category-card {
+        width: 100%;
+    }
+}
