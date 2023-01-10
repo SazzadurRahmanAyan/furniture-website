@@ -614,3 +614,149 @@ button {
 }
 
 /* about section end */
+.home-gallery {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.left1 {
+    flex: 1;
+    display: flex;
+    padding: 16px;
+    align-self: stretch;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery-card {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-image {
+    top: 0;
+    flex: 1;
+    left: auto;
+    right: 0;
+    width: 100%;
+    bottom: auto;
+    object-fit: cover;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    padding: 32px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text {
+    color: var(--black-color80);
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    line-height: 14px;
+    margin-bottom: 16px;
+}
+
+.card-container1 {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 24px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.star-icon {
+    color: var(--green-color);
+}
+
+.card-container2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-currency {
+    color: var(--black-color50);
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card-value {
+    color: var(--black-color50);
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card-root4 {
+    flex: 1;
+    height: 100%;
+}
+
+.right1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-top {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left2 {
+    flex: 1;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-bottom {
+    flex: 1;
+    width: 100%;
+    display: flex;
+}
+
+.left3 {
+    flex: 1;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right3 {
+    flex: 1;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right2 {
+    flex: 1;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
