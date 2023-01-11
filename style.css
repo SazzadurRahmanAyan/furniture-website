@@ -866,3 +866,67 @@ button {
 }
 
 /* end Lookbook */
+
+/* blog section start */
+.container08 {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blog-post-card {
+    width: 100%;
+    display: flex;
+    position: relative;
+    max-width: 400px;
+    align-self: stretch;
+    transition: 0.3s;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-post-card:hover {
+    transform: scale(1.02);
+}
+
+.blog-post-image {
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-post-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 32px;
+    padding-right: 8px;
+    flex-direction: column;
+    padding-bottom: 32px;
+    justify-content: space-between;
+    background-color: var(--white-color);
+}
+
+.blog-text {
+    color: var(--black-color80);
+    font-size: 22px;
+    font-style: normal;
+    margin-top: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.blog-text1 {
+    color: var(--black-color50);
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 32px;
+}
+
+/* blog section end */
+

@@ -135,3 +135,15 @@
         bottom: auto;
     }
 }
+
+@media(max-width:991px) {
+    .blog-post-card {
+        max-width: 48%;
+    }
+}
+
+@media(max-width:7767) {
+    .blog-post-card {
+        max-width: 100%;
+    }
+}
