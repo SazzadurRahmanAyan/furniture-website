@@ -930,3 +930,118 @@ button {
 
 /* blog section end */
 
+/* contact us section start */
+.contact {
+    text-align: center;
+    padding: 50px 0 140px;
+    width: 100%;
+    background-image: url(images/img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+
+form {
+    width: 48.33%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+form .field{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+form .field label {
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #313a3d;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 0.075rem;
+    color: var(--white-color);
+    transition: all 333ms ease-in-out;
+}
+
+form .filed label+span {
+    font-family: Jost;
+    opacity: 0;
+    color: var(--white-color);
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 7%;
+    font-size: 2.5rem;
+    text-shadow: 1px 2px 0 var(--green-color);
+    transition: all 333ms ease-in-out;
+}
+
+form .field input[type="text"] {
+    border: none;
+    background: #e8e9ee;
+    width: 80.5%;
+    margin: 5px;
+    padding: 10px 0;
+    padding-left: 19.5%;
+    color: #313a3d;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+form .field input[type="text"]:focus,
+form .field input[type="text"].focused {
+    outline: none;
+}
+
+form .field input[type="text"]:focus+label,
+form .field input[type="text"].focused+label {
+    width: 18%;
+    background: var(--green-color);
+    color: #313a3d;
+}
+
+form .field input[type="text"].focused+label {
+    color: var(--green-color);
+}
+
+form .field:hover label {
+    width: 18%;
+    background: #313a3d;
+    color: var(--white-color);
+}
+
+form input[type="submit"] {
+    background: var(--green-color);
+    color: var(--black-color);
+    --webkit-appearance: none;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 8px 30px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-family: Jost;
+    font-weight: 300;
+    margin-top: 20px;
+    transition: all 333ms ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background: #313a3d;
+    color: var(--green-color);
+}
+
+form input[type="submit"]:focus {
+    outline: none;
+    background: var(--green-color);
+}
+
+/* contact us sectio end */
