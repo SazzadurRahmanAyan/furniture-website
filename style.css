@@ -760,3 +760,109 @@ button {
     flex-direction: column;
     justify-content: center;
 }
+
+/* end trending section */
+
+/* Lookbooks section start */
+.full-width-banner {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    padding-top: 64px;
+    justify-content: center;
+}
+
+.left4 {
+    flex: 1;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    border-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ddfffc;
+}
+
+.home-content {
+    margin: 0 0 40px 0;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    flex-shrink: 1;
+    border-color: transparent;
+    flex-direction: column;
+}
+
+.look-text1 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    margin: 0 0 16px 0;
+    font-size: 28px;
+    align-self: auto;
+    font-style: normal;
+    text-align: left;
+    font-family: Jost;
+    font-weight: 500px;
+    line-height: 20px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.look-text2 {
+    color: rgba(0, 0, 0, 0.6);
+    width: 267px;
+    height: auto;
+    font-size: 16px;
+    align-self: auto;
+    font-style: normal;
+    text-align: center;
+    font-family: Jost;
+    font-weight: 400px;
+    line-height: 24px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.home-btn {
+    cursor: pointer;
+    display: flex;
+    padding: 16px 24px;
+    position: relative;
+    box-sizing: border-box;
+    transition: 0.3s;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--green-color);
+}
+
+.home-btn:hover {
+    background-color: var(--white-color);
+}
+
+.look-text3 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 16px;
+    align-self: auto;
+    font-style: normal;
+    text-align: left;
+    font-family: Jost;
+    font-weight: 500px;
+    line-height: 14px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.home-image1 {
+    width: 60%;
+    position: relative;
+    box-sizing: border-box;
+    object-fit: cover;
+    border-color: transparent;
+}
+
+/* end Lookbook */
